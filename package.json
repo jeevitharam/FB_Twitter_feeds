@@ -1,0 +1,16 @@
+{
+  "name": "twitterStatus",
+  "version": "1.0.0",
+  "description": "List and display twitter feeds.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "twitter",
+    "status",
+    "feeds"
+  ],
+  "author": "Jeevitha",
+  "license": "ISC"
+}
