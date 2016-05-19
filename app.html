@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Twitter Statuses
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $.get("/getfeeds", function(res){
+                console.log(res)
+            })
+        });
+        
+     
+        </script>
+        <script type="text/javascript">
+            window.setTimeout(function(){
+                
+            })
+            function list(data)
+            {
+                var x = getElementByID("statuses");
+                for(var i = 0; i<=data.length; i++){
+                    var a = document.createElement('li');
+                    a.innerHTML=data[i].text;
+                    console.log(data[i].text);
+                    x.appendChild(a);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1> Twitter Statuses</h1>
+        <ul id="statuses">
+            
+        </ul>
+        <button onClick="loadDoc()">Click me</button>
+    </body>
+</html>

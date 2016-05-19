@@ -12,5 +12,8 @@
     "feeds"
   ],
   "author": "Jeevitha",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "twitter": "^1.3.0"
+  }
 }
